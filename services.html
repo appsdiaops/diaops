@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Services — DiaOps</title>
+  <meta name="description" content="DiaOps services: cloud platform engineering, automation, DevOps, software development, and operational consulting." />
+  <link rel="icon" type="image/svg+xml" href="assets/img/logo-icon.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@500;600;700;800&display=swap" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = { theme: { extend: {
+      colors: { navy: '#14305f', brand: '#2f6fb0', sky: '#4aa3df', skylight: '#eaf4fc' },
+      fontFamily: { sans: ['Inter','sans-serif'], head: ['Poppins','sans-serif'] }
+    }}}
+  </script>
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body class="bg-white antialiased">
+
+  <!-- ===== NAVBAR ===== -->
+  <header id="nav" class="fixed top-0 inset-x-0 z-50">
+    <nav class="max-w-7xl mx-auto px-5 sm:px-8 h-[72px] flex items-center justify-between">
+      <a href="index.html" class="flex items-center gap-2.5">
+        <img src="assets/img/diaops_logo.png" alt="DiaOps" class="h-8 sm:h-9 w-auto" />
+      </a>
+      <div class="hidden lg:flex items-center gap-8 text-[15px] font-medium text-gray-600">
+        <a href="index.html" class="nav-link hover:text-navy">Home</a>
+        <a href="products.html" class="nav-link hover:text-navy">Products</a>
+        <a href="services.html" class="nav-link hover:text-navy">Services</a>
+        <a href="about.html" class="nav-link hover:text-navy">About</a>
+        <a href="careers.html" class="nav-link hover:text-navy">Careers</a>
+        <a href="contact.html" class="nav-link hover:text-navy">Contact</a>
+      </div>
+      <div class="hidden lg:flex items-center gap-3">
+        <a href="contact.html" class="btn btn-primary bg-gradient-to-r from-brand to-sky text-white px-5 py-2.5 rounded-full text-sm font-semibold">Request Demo</a>
+      </div>
+      <button id="burger" class="lg:hidden p-2 text-navy" aria-label="Menu" aria-expanded="false">
+        <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 7h16M4 12h16M4 17h16" stroke-linecap="round"/></svg>
+      </button>
+    </nav>
+    <!-- Mobile sidebar -->
+    <div id="mobile-overlay" class="fixed inset-0 bg-navy/50 backdrop-blur-sm z-40 opacity-0 pointer-events-none transition-opacity duration-300 lg:hidden"></div>
+    <aside id="mobile-menu" class="fixed top-0 right-0 z-50 h-full w-72 max-w-[80vw] bg-white shadow-2xl translate-x-full transition-transform duration-300 ease-out lg:hidden flex flex-col">
+      <div class="flex items-center justify-between px-5 h-[72px] border-b border-gray-100">
+        <img src="assets/img/diaops_logo.png" alt="DiaOps" class="h-7 w-auto" />
+        <button id="close-menu" class="p-2 text-navy" aria-label="Close menu">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 6l12 12M18 6L6 18" stroke-linecap="round"/></svg>
+        </button>
+      </div>
+      <nav class="flex flex-col px-5 py-4 gap-1 text-gray-700 font-medium">
+        <a href="index.html" class="py-3 border-b border-gray-50 hover:text-brand">Home</a>
+        <a href="products.html" class="py-3 border-b border-gray-50 hover:text-brand">Products</a>
+        <a href="services.html" class="py-3 border-b border-gray-50 hover:text-brand">Services</a>
+        <a href="about.html" class="py-3 border-b border-gray-50 hover:text-brand">About</a>
+        <a href="careers.html" class="py-3 border-b border-gray-50 hover:text-brand">Careers</a>
+        <a href="contact.html" class="py-3 hover:text-brand">Contact</a>
+        <a href="contact.html" class="mt-4 text-center bg-gradient-to-r from-brand to-sky text-white px-5 py-3 rounded-full font-semibold">Request Demo</a>
+      </nav>
+    </aside>
+  </header>
+
+  <!-- ===== PAGE HEADER ===== -->
+  <section class="bg-navy-mesh pt-36 pb-20 text-center">
+    <div class="max-w-3xl mx-auto px-5 reveal">
+      <span class="inline-block bg-white/10 text-sky text-sm font-semibold px-4 py-1.5 rounded-full">What we offer</span>
+      <h1 class="mt-5 text-5xl font-head font-extrabold text-white">Cloud &amp; automation, end to end</h1>
+      <p class="mt-5 text-white/80 text-lg">With 10+ years of expertise, we help businesses build, migrate, automate, and scale on modern cloud infrastructure.</p>
+    </div>
+  </section>
+
+  <!-- ===== SERVICES GRID ===== -->
+  <section class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-5 sm:px-8 grid md:grid-cols-2 lg:grid-cols-3 gap-7">
+      <div class="card reveal bg-white border border-gray-100 rounded-2xl p-8">
+        <div class="w-14 h-14 rounded-xl bg-skylight text-brand flex items-center justify-center mb-5"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17.5 19a4.5 4.5 0 0 0 .5-9 6 6 0 0 0-11.6-1.5A4 4 0 0 0 6 19h11.5z" stroke-linejoin="round"/></svg></div>
+        <h3 class="text-xl font-head font-bold text-navy">Cloud Platform Engineering</h3>
+        <p class="mt-3 text-gray-600">Architecture, migration, and management of scalable, secure cloud platforms on AWS, Azure, and Google Cloud.</p>
+      </div>
+      <div class="card reveal bg-white border border-gray-100 rounded-2xl p-8">
+        <div class="w-14 h-14 rounded-xl bg-skylight text-brand flex items-center justify-center mb-5"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M12 2v3M12 19v3M4.2 4.2l2.1 2.1M17.7 17.7l2.1 2.1M2 12h3M19 12h3M4.2 19.8l2.1-2.1M17.7 6.3l2.1-2.1"/></svg></div>
+        <h3 class="text-xl font-head font-bold text-navy">Process Automation</h3>
+        <p class="mt-3 text-gray-600">Automate repetitive workflows, approvals, and operations to cut manual effort, reduce errors, and save time.</p>
+      </div>
+      <div class="card reveal bg-white border border-gray-100 rounded-2xl p-8">
+        <div class="w-14 h-14 rounded-xl bg-skylight text-brand flex items-center justify-center mb-5"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 18l6-6-6-6M8 6l-6 6 6 6"/></svg></div>
+        <h3 class="text-xl font-head font-bold text-navy">Custom Software Development</h3>
+        <p class="mt-3 text-gray-600">Tailored web and SaaS applications engineered around your unique operational and business requirements.</p>
+      </div>
+      <div class="card reveal bg-white border border-gray-100 rounded-2xl p-8">
+        <div class="w-14 h-14 rounded-xl bg-skylight text-brand flex items-center justify-center mb-5"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l8 4v6c0 5-3.5 8-8 10-4.5-2-8-5-8-10V6l8-4z"/></svg></div>
+        <h3 class="text-xl font-head font-bold text-navy">DevOps &amp; CI/CD</h3>
+        <p class="mt-3 text-gray-600">Reliable pipelines, infrastructure as code, monitoring, and continuous delivery for faster, safer releases.</p>
+      </div>
+      <div class="card reveal bg-white border border-gray-100 rounded-2xl p-8">
+        <div class="w-14 h-14 rounded-xl bg-skylight text-brand flex items-center justify-center mb-5"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 3v18h18M7 14l4-4 3 3 5-6"/></svg></div>
+        <h3 class="text-xl font-head font-bold text-navy">Data &amp; Analytics</h3>
+        <p class="mt-3 text-gray-600">Dashboards, reporting, and BI that turn operational data into decisions — powered by our Vision platform.</p>
+      </div>
+      <div class="card reveal bg-white border border-gray-100 rounded-2xl p-8">
+        <div class="w-14 h-14 rounded-xl bg-skylight text-brand flex items-center justify-center mb-5"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></div>
+        <h3 class="text-xl font-head font-bold text-navy">Operational Consulting</h3>
+        <p class="mt-3 text-gray-600">Strategy and advisory to streamline operations, improve visibility, and adopt scalable, connected systems.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PROCESS ===== -->
+  <section class="py-20 bg-mesh">
+    <div class="max-w-7xl mx-auto px-5 sm:px-8">
+      <div class="text-center max-w-2xl mx-auto reveal">
+        <span class="text-brand font-semibold">How we work</span>
+        <h2 class="mt-2 text-4xl font-head font-bold text-navy">A proven delivery process</h2>
+      </div>
+      <div class="mt-14 grid md:grid-cols-4 gap-6">
+        <div class="reveal text-center">
+          <div class="mx-auto w-14 h-14 rounded-full bg-white border-2 border-sky text-brand font-head font-extrabold text-xl flex items-center justify-center">1</div>
+          <h3 class="mt-4 font-head font-bold text-navy">Discover</h3>
+          <p class="mt-2 text-sm text-gray-600">We learn your operations, goals, and challenges.</p>
+        </div>
+        <div class="reveal text-center">
+          <div class="mx-auto w-14 h-14 rounded-full bg-white border-2 border-sky text-brand font-head font-extrabold text-xl flex items-center justify-center">2</div>
+          <h3 class="mt-4 font-head font-bold text-navy">Design</h3>
+          <p class="mt-2 text-sm text-gray-600">We architect the right cloud and automation solution.</p>
+        </div>
+        <div class="reveal text-center">
+          <div class="mx-auto w-14 h-14 rounded-full bg-white border-2 border-sky text-brand font-head font-extrabold text-xl flex items-center justify-center">3</div>
+          <h3 class="mt-4 font-head font-bold text-navy">Build</h3>
+          <p class="mt-2 text-sm text-gray-600">We develop, integrate, and rigorously test.</p>
+        </div>
+        <div class="reveal text-center">
+          <div class="mx-auto w-14 h-14 rounded-full bg-white border-2 border-sky text-brand font-head font-extrabold text-xl flex items-center justify-center">4</div>
+          <h3 class="mt-4 font-head font-bold text-navy">Scale</h3>
+          <p class="mt-2 text-sm text-gray-600">We deploy, monitor, support, and improve continuously.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CTA ===== -->
+  <section class="py-20">
+    <div class="max-w-6xl mx-auto px-5">
+      <div class="bg-navy-mesh rounded-[2rem] px-8 py-16 text-center reveal">
+        <h2 class="text-4xl font-head font-bold text-white">Let's build something that scales</h2>
+        <p class="mt-4 text-white/80 max-w-xl mx-auto">Tell us about your project and we'll show you how DiaOps can help.</p>
+        <div class="mt-8"><a href="contact.html" class="btn bg-white text-navy px-7 py-3.5 rounded-full font-semibold">Talk to us</a></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="bg-navy text-white/70">
+    <div class="max-w-7xl mx-auto px-5 sm:px-8 py-16 grid md:grid-cols-4 gap-10">
+      <div class="md:col-span-1">
+        <div class="flex items-center gap-2.5"><img src="assets/img/logo-icon.svg" alt="DiaOps" class="h-9 w-9" /><span class="text-2xl font-head font-extrabold text-white">DiaOps</span></div>
+        <p class="mt-4 text-sm">Run Smarter. Scale Faster.</p>
+        <p class="mt-2 text-sm text-white/50">Cloud platforms &amp; automation for modern businesses.</p>
+      </div>
+      <div><h4 class="text-white font-semibold mb-4">Company</h4><ul class="space-y-2.5 text-sm"><li><a href="about.html" class="hover:text-sky">About Us</a></li><li><a href="careers.html" class="hover:text-sky">Careers</a></li><li><a href="contact.html" class="hover:text-sky">Contact</a></li></ul></div>
+      <div><h4 class="text-white font-semibold mb-4">Products</h4><ul class="space-y-2.5 text-sm"><li><a href="products.html" class="hover:text-sky">Vision</a></li><li><a href="products.html" class="hover:text-sky">CoreOps</a></li><li><a href="services.html" class="hover:text-sky">Services</a></li></ul></div>
+      <div><h4 class="text-white font-semibold mb-4">Get in touch</h4><ul class="space-y-2.5 text-sm"><li><a href="mailto:hello@diaops.com" class="hover:text-sky">hello@diaops.com</a></li><li class="text-white/50">United States &amp; Offshore Centers</li></ul></div>
+    </div>
+    <div class="border-t border-white/10"><div class="max-w-7xl mx-auto px-5 sm:px-8 py-6 flex flex-col sm:flex-row items-center justify-between gap-3 text-sm"><p>&copy; <span data-year>2026</span> DiaOps. All rights reserved.</p><p class="font-head font-semibold text-white">Run Smarter. Scale Faster.</p></div></div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

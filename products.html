@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Products — DiaOps</title>
+  <meta name="description" content="DiaOps products: Vision (analytics & insights) and CoreOps (unified business operations platform)." />
+  <link rel="icon" type="image/svg+xml" href="assets/img/logo-icon.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@500;600;700;800&display=swap" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = { theme: { extend: {
+      colors: { navy: '#14305f', brand: '#2f6fb0', sky: '#4aa3df', skylight: '#eaf4fc' },
+      fontFamily: { sans: ['Inter','sans-serif'], head: ['Poppins','sans-serif'] }
+    }}}
+  </script>
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body class="bg-white antialiased">
+
+  <!-- ===== NAVBAR ===== -->
+  <header id="nav" class="fixed top-0 inset-x-0 z-50">
+    <nav class="max-w-7xl mx-auto px-5 sm:px-8 h-[72px] flex items-center justify-between">
+      <a href="index.html" class="flex items-center gap-2.5">
+        <img src="assets/img/diaops_logo.png" alt="DiaOps" class="h-8 sm:h-9 w-auto" />
+      </a>
+      <div class="hidden lg:flex items-center gap-8 text-[15px] font-medium text-gray-600">
+        <a href="index.html" class="nav-link hover:text-navy">Home</a>
+        <a href="products.html" class="nav-link hover:text-navy">Products</a>
+        <a href="services.html" class="nav-link hover:text-navy">Services</a>
+        <a href="about.html" class="nav-link hover:text-navy">About</a>
+        <a href="careers.html" class="nav-link hover:text-navy">Careers</a>
+        <a href="contact.html" class="nav-link hover:text-navy">Contact</a>
+      </div>
+      <div class="hidden lg:flex items-center gap-3">
+        <a href="contact.html" class="btn btn-primary bg-gradient-to-r from-brand to-sky text-white px-5 py-2.5 rounded-full text-sm font-semibold">Request Demo</a>
+      </div>
+      <button id="burger" class="lg:hidden p-2 text-navy" aria-label="Menu" aria-expanded="false">
+        <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 7h16M4 12h16M4 17h16" stroke-linecap="round"/></svg>
+      </button>
+    </nav>
+    <!-- Mobile sidebar -->
+    <div id="mobile-overlay" class="fixed inset-0 bg-navy/50 backdrop-blur-sm z-40 opacity-0 pointer-events-none transition-opacity duration-300 lg:hidden"></div>
+    <aside id="mobile-menu" class="fixed top-0 right-0 z-50 h-full w-72 max-w-[80vw] bg-white shadow-2xl translate-x-full transition-transform duration-300 ease-out lg:hidden flex flex-col">
+      <div class="flex items-center justify-between px-5 h-[72px] border-b border-gray-100">
+        <img src="assets/img/diaops_logo.png" alt="DiaOps" class="h-7 w-auto" />
+        <button id="close-menu" class="p-2 text-navy" aria-label="Close menu">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 6l12 12M18 6L6 18" stroke-linecap="round"/></svg>
+        </button>
+      </div>
+      <nav class="flex flex-col px-5 py-4 gap-1 text-gray-700 font-medium">
+        <a href="index.html" class="py-3 border-b border-gray-50 hover:text-brand">Home</a>
+        <a href="products.html" class="py-3 border-b border-gray-50 hover:text-brand">Products</a>
+        <a href="services.html" class="py-3 border-b border-gray-50 hover:text-brand">Services</a>
+        <a href="about.html" class="py-3 border-b border-gray-50 hover:text-brand">About</a>
+        <a href="careers.html" class="py-3 border-b border-gray-50 hover:text-brand">Careers</a>
+        <a href="contact.html" class="py-3 hover:text-brand">Contact</a>
+        <a href="contact.html" class="mt-4 text-center bg-gradient-to-r from-brand to-sky text-white px-5 py-3 rounded-full font-semibold">Request Demo</a>
+      </nav>
+    </aside>
+  </header>
+
+  <!-- ===== PAGE HEADER ===== -->
+  <section class="bg-navy-mesh pt-36 pb-20 text-center">
+    <div class="max-w-3xl mx-auto px-5 reveal">
+      <span class="inline-block bg-white/10 text-sky text-sm font-semibold px-4 py-1.5 rounded-full">Our Products</span>
+      <h1 class="mt-5 text-5xl font-head font-extrabold text-white">Software that runs your business</h1>
+      <p class="mt-5 text-white/80 text-lg">Purpose-built platforms that bring operations, data, and teams together — built and maintained by DiaOps.</p>
+    </div>
+  </section>
+
+  <!-- ===== VISION ===== -->
+  <section class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-5 sm:px-8 grid lg:grid-cols-2 gap-12 items-center">
+      <div class="reveal">
+        <div class="flex items-center gap-3">
+          <div class="w-12 h-12 rounded-xl bg-gradient-to-br from-brand to-sky text-white flex items-center justify-center">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7z"/><circle cx="12" cy="12" r="3"/></svg>
+          </div>
+          <h2 class="text-3xl font-head font-bold text-navy">Vision</h2>
+        </div>
+        <p class="mt-5 text-gray-600 text-lg">A data &amp; analytics platform that turns raw operational data into clear, real-time insight — so leaders can make faster, smarter decisions.</p>
+        <div class="mt-7 grid sm:grid-cols-2 gap-4">
+          <div class="flex gap-3"><span class="text-sky mt-0.5">✓</span><span class="text-gray-700">Real-time operational dashboards</span></div>
+          <div class="flex gap-3"><span class="text-sky mt-0.5">✓</span><span class="text-gray-700">Employee &amp; productivity analytics</span></div>
+          <div class="flex gap-3"><span class="text-sky mt-0.5">✓</span><span class="text-gray-700">Business &amp; performance reporting</span></div>
+          <div class="flex gap-3"><span class="text-sky mt-0.5">✓</span><span class="text-gray-700">Predictive, AI-powered insights</span></div>
+        </div>
+      </div>
+      <div class="reveal bg-mesh rounded-3xl p-8 border border-gray-100">
+        <div class="bg-white rounded-2xl shadow-lg p-6">
+          <div class="flex items-center justify-between mb-5"><span class="font-head font-bold text-navy">Operations Overview</span><span class="text-xs text-sky bg-skylight px-2 py-1 rounded-full">Live</span></div>
+          <div class="grid grid-cols-3 gap-3 mb-5">
+            <div class="bg-skylight rounded-xl p-3"><div class="text-2xl font-bold text-navy">94%</div><div class="text-[11px] text-gray-500">Efficiency</div></div>
+            <div class="bg-skylight rounded-xl p-3"><div class="text-2xl font-bold text-navy">1.2k</div><div class="text-[11px] text-gray-500">Tasks</div></div>
+            <div class="bg-skylight rounded-xl p-3"><div class="text-2xl font-bold text-navy">+18%</div><div class="text-[11px] text-gray-500">Growth</div></div>
+          </div>
+          <div class="flex items-end gap-2 h-28">
+            <div class="flex-1 bg-gradient-to-t from-brand to-sky rounded-t-lg" style="height:55%"></div>
+            <div class="flex-1 bg-gradient-to-t from-brand to-sky rounded-t-lg" style="height:78%"></div>
+            <div class="flex-1 bg-gradient-to-t from-brand to-sky rounded-t-lg" style="height:40%"></div>
+            <div class="flex-1 bg-gradient-to-t from-brand to-sky rounded-t-lg" style="height:90%"></div>
+            <div class="flex-1 bg-gradient-to-t from-brand to-sky rounded-t-lg" style="height:65%"></div>
+            <div class="flex-1 bg-gradient-to-t from-brand to-sky rounded-t-lg" style="height:82%"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== COREOPS ===== -->
+  <section class="py-20 bg-mesh">
+    <div class="max-w-7xl mx-auto px-5 sm:px-8">
+      <div class="text-center max-w-2xl mx-auto reveal">
+        <div class="inline-flex items-center gap-3 mb-3">
+          <div class="w-12 h-12 rounded-xl bg-gradient-to-br from-navy to-brand text-white flex items-center justify-center">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 7l8-4 8 4-8 4-8-4zM4 7v10l8 4 8-4V7" stroke-linejoin="round"/></svg>
+          </div>
+          <h2 class="text-3xl font-head font-bold text-navy">CoreOps</h2>
+        </div>
+        <p class="text-gray-600 text-lg">A unified business operations platform that combines workforce, inventory, communication, scheduling, HR, and analytics — everything your business needs, in one place.</p>
+      </div>
+      <div class="mt-14 grid md:grid-cols-3 gap-6">
+        <!-- feature cards -->
+        <div class="card reveal bg-white rounded-2xl p-7 border border-gray-100">
+          <div class="w-12 h-12 rounded-xl bg-skylight text-brand flex items-center justify-center mb-4"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 4-6 8-6s8 2 8 6"/></svg></div>
+          <h3 class="font-head font-bold text-navy text-lg">Employee Management</h3>
+          <ul class="mt-3 text-sm text-gray-600 space-y-1.5"><li>Onboarding &amp; profiles</li><li>Roles &amp; permissions</li><li>Performance &amp; training</li></ul>
+        </div>
+        <div class="card reveal bg-white rounded-2xl p-7 border border-gray-100">
+          <div class="w-12 h-12 rounded-xl bg-skylight text-brand flex items-center justify-center mb-4"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="17" rx="2"/><path d="M3 9h18M8 2v4M16 2v4"/></svg></div>
+          <h3 class="font-head font-bold text-navy text-lg">Scheduling &amp; Workforce</h3>
+          <ul class="mt-3 text-sm text-gray-600 space-y-1.5"><li>Shift &amp; schedule management</li><li>Attendance &amp; time-off</li><li>Task assignment</li></ul>
+        </div>
+        <div class="card reveal bg-white rounded-2xl p-7 border border-gray-100">
+          <div class="w-12 h-12 rounded-xl bg-skylight text-brand flex items-center justify-center mb-4"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></div>
+          <h3 class="font-head font-bold text-navy text-lg">Team Communication</h3>
+          <ul class="mt-3 text-sm text-gray-600 space-y-1.5"><li>Internal employee chat</li><li>Location-based channels</li><li>Announcements &amp; updates</li></ul>
+        </div>
+        <div class="card reveal bg-white rounded-2xl p-7 border border-gray-100">
+          <div class="w-12 h-12 rounded-xl bg-skylight text-brand flex items-center justify-center mb-4"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 7l-8-4-8 4 8 4 8-4zM4 7v10l8 4 8-4V7M12 11v10"/></svg></div>
+          <h3 class="font-head font-bold text-navy text-lg">Inventory &amp; Operations</h3>
+          <ul class="mt-3 text-sm text-gray-600 space-y-1.5"><li>Stock &amp; product tracking</li><li>Multi-location visibility</li><li>Alerts &amp; reporting</li></ul>
+        </div>
+        <div class="card reveal bg-white rounded-2xl p-7 border border-gray-100">
+          <div class="w-12 h-12 rounded-xl bg-skylight text-brand flex items-center justify-center mb-4"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 12h6M9 16h6M9 8h6M5 3h14a1 1 0 0 1 1 1v16a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1z"/></svg></div>
+          <h3 class="font-head font-bold text-navy text-lg">HR &amp; Administration</h3>
+          <ul class="mt-3 text-sm text-gray-600 space-y-1.5"><li>Employee records</li><li>Digital documentation</li><li>Compliance workflows</li></ul>
+        </div>
+        <div class="card reveal bg-white rounded-2xl p-7 border border-gray-100">
+          <div class="w-12 h-12 rounded-xl bg-skylight text-brand flex items-center justify-center mb-4"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 3v18h18M7 14l4-4 3 3 5-6"/></svg></div>
+          <h3 class="font-head font-bold text-navy text-lg">Analytics &amp; Surveys</h3>
+          <ul class="mt-3 text-sm text-gray-600 space-y-1.5"><li>Operational dashboards</li><li>Employee surveys &amp; feedback</li><li>Productivity insights</li></ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ROADMAP / FUTURE FEATURES ===== -->
+  <section class="py-20 bg-white">
+    <div class="max-w-5xl mx-auto px-5 sm:px-8 text-center">
+      <div class="reveal">
+        <span class="text-brand font-semibold">On the roadmap</span>
+        <h2 class="mt-2 text-3xl font-head font-bold text-navy">Always evolving</h2>
+        <p class="mt-3 text-gray-600">Continuous improvements and advanced capabilities in the pipeline.</p>
+      </div>
+      <div class="mt-10 flex flex-wrap justify-center gap-3 reveal">
+        <span class="bg-skylight text-navy px-4 py-2 rounded-full text-sm font-medium">AI-powered insights</span>
+        <span class="bg-skylight text-navy px-4 py-2 rounded-full text-sm font-medium">Mobile workforce app</span>
+        <span class="bg-skylight text-navy px-4 py-2 rounded-full text-sm font-medium">Approval workflows</span>
+        <span class="bg-skylight text-navy px-4 py-2 rounded-full text-sm font-medium">Payroll integrations</span>
+        <span class="bg-skylight text-navy px-4 py-2 rounded-full text-sm font-medium">POS integrations</span>
+        <span class="bg-skylight text-navy px-4 py-2 rounded-full text-sm font-medium">Vendor management</span>
+        <span class="bg-skylight text-navy px-4 py-2 rounded-full text-sm font-medium">Asset tracking</span>
+        <span class="bg-skylight text-navy px-4 py-2 rounded-full text-sm font-medium">Audit logs</span>
+        <span class="bg-skylight text-navy px-4 py-2 rounded-full text-sm font-medium">API integrations</span>
+        <span class="bg-skylight text-navy px-4 py-2 rounded-full text-sm font-medium">Role-based access control</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CTA ===== -->
+  <section class="py-20">
+    <div class="max-w-6xl mx-auto px-5">
+      <div class="bg-navy-mesh rounded-[2rem] px-8 py-16 text-center reveal">
+        <h2 class="text-4xl font-head font-bold text-white">See it in action</h2>
+        <p class="mt-4 text-white/80 max-w-xl mx-auto">Book a personalized walkthrough of Vision and CoreOps for your business.</p>
+        <div class="mt-8"><a href="contact.html" class="btn bg-white text-navy px-7 py-3.5 rounded-full font-semibold">Request a Demo</a></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="bg-navy text-white/70">
+    <div class="max-w-7xl mx-auto px-5 sm:px-8 py-16 grid md:grid-cols-4 gap-10">
+      <div class="md:col-span-1">
+        <div class="flex items-center gap-2.5"><img src="assets/img/logo-icon.svg" alt="DiaOps" class="h-9 w-9" /><span class="text-2xl font-head font-extrabold text-white">DiaOps</span></div>
+        <p class="mt-4 text-sm">Run Smarter. Scale Faster.</p>
+        <p class="mt-2 text-sm text-white/50">Cloud platforms &amp; automation for modern businesses.</p>
+      </div>
+      <div><h4 class="text-white font-semibold mb-4">Company</h4><ul class="space-y-2.5 text-sm"><li><a href="about.html" class="hover:text-sky">About Us</a></li><li><a href="careers.html" class="hover:text-sky">Careers</a></li><li><a href="contact.html" class="hover:text-sky">Contact</a></li></ul></div>
+      <div><h4 class="text-white font-semibold mb-4">Products</h4><ul class="space-y-2.5 text-sm"><li><a href="products.html" class="hover:text-sky">Vision</a></li><li><a href="products.html" class="hover:text-sky">CoreOps</a></li><li><a href="services.html" class="hover:text-sky">Services</a></li></ul></div>
+      <div><h4 class="text-white font-semibold mb-4">Get in touch</h4><ul class="space-y-2.5 text-sm"><li><a href="mailto:hello@diaops.com" class="hover:text-sky">hello@diaops.com</a></li><li class="text-white/50">United States &amp; Offshore Centers</li></ul></div>
+    </div>
+    <div class="border-t border-white/10"><div class="max-w-7xl mx-auto px-5 sm:px-8 py-6 flex flex-col sm:flex-row items-center justify-between gap-3 text-sm"><p>&copy; <span data-year>2026</span> DiaOps. All rights reserved.</p><p class="font-head font-semibold text-white">Run Smarter. Scale Faster.</p></div></div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

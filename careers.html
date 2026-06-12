@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Careers — DiaOps</title>
+  <meta name="description" content="Join DiaOps. Open roles: Sales Analyst and Business Analyst. Work on cloud platforms and automation with a 10+ year expert team." />
+  <link rel="icon" type="image/svg+xml" href="assets/img/logo-icon.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@500;600;700;800&display=swap" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = { theme: { extend: {
+      colors: { navy: '#14305f', brand: '#2f6fb0', sky: '#4aa3df', skylight: '#eaf4fc' },
+      fontFamily: { sans: ['Inter','sans-serif'], head: ['Poppins','sans-serif'] }
+    }}}
+  </script>
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body class="bg-white antialiased">
+
+  <!-- ===== NAVBAR ===== -->
+  <header id="nav" class="fixed top-0 inset-x-0 z-50">
+    <nav class="max-w-7xl mx-auto px-5 sm:px-8 h-[72px] flex items-center justify-between">
+      <a href="index.html" class="flex items-center gap-2.5">
+        <img src="assets/img/diaops_logo.png" alt="DiaOps" class="h-8 sm:h-9 w-auto" />
+      </a>
+      <div class="hidden lg:flex items-center gap-8 text-[15px] font-medium text-gray-600">
+        <a href="index.html" class="nav-link hover:text-navy">Home</a>
+        <a href="products.html" class="nav-link hover:text-navy">Products</a>
+        <a href="services.html" class="nav-link hover:text-navy">Services</a>
+        <a href="about.html" class="nav-link hover:text-navy">About</a>
+        <a href="careers.html" class="nav-link hover:text-navy">Careers</a>
+        <a href="contact.html" class="nav-link hover:text-navy">Contact</a>
+      </div>
+      <div class="hidden lg:flex items-center gap-3">
+        <a href="#openings" class="btn btn-primary bg-gradient-to-r from-brand to-sky text-white px-5 py-2.5 rounded-full text-sm font-semibold">View Openings</a>
+      </div>
+      <button id="burger" class="lg:hidden p-2 text-navy" aria-label="Menu" aria-expanded="false">
+        <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 7h16M4 12h16M4 17h16" stroke-linecap="round"/></svg>
+      </button>
+    </nav>
+    <!-- Mobile sidebar -->
+    <div id="mobile-overlay" class="fixed inset-0 bg-navy/50 backdrop-blur-sm z-40 opacity-0 pointer-events-none transition-opacity duration-300 lg:hidden"></div>
+    <aside id="mobile-menu" class="fixed top-0 right-0 z-50 h-full w-72 max-w-[80vw] bg-white shadow-2xl translate-x-full transition-transform duration-300 ease-out lg:hidden flex flex-col">
+      <div class="flex items-center justify-between px-5 h-[72px] border-b border-gray-100">
+        <img src="assets/img/diaops_logo.png" alt="DiaOps" class="h-7 w-auto" />
+        <button id="close-menu" class="p-2 text-navy" aria-label="Close menu">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 6l12 12M18 6L6 18" stroke-linecap="round"/></svg>
+        </button>
+      </div>
+      <nav class="flex flex-col px-5 py-4 gap-1 text-gray-700 font-medium">
+        <a href="index.html" class="py-3 border-b border-gray-50 hover:text-brand">Home</a>
+        <a href="products.html" class="py-3 border-b border-gray-50 hover:text-brand">Products</a>
+        <a href="services.html" class="py-3 border-b border-gray-50 hover:text-brand">Services</a>
+        <a href="about.html" class="py-3 border-b border-gray-50 hover:text-brand">About</a>
+        <a href="careers.html" class="py-3 border-b border-gray-50 hover:text-brand">Careers</a>
+        <a href="contact.html" class="py-3 hover:text-brand">Contact</a>
+        <a href="#openings" class="mt-4 text-center bg-gradient-to-r from-brand to-sky text-white px-5 py-3 rounded-full font-semibold">View Openings</a>
+      </nav>
+    </aside>
+  </header>
+
+  <!-- ===== PAGE HEADER ===== -->
+  <section class="bg-navy-mesh pt-36 pb-20 text-center">
+    <div class="max-w-3xl mx-auto px-5 reveal">
+      <span class="inline-block bg-white/10 text-sky text-sm font-semibold px-4 py-1.5 rounded-full">Careers at DiaOps</span>
+      <h1 class="mt-5 text-5xl font-head font-extrabold text-white">Build the future of operations with us</h1>
+      <p class="mt-5 text-white/80 text-lg">Join a 10+ year expert team building cloud platforms and automation. We're growing — and we're hiring analysts to help drive it.</p>
+      <div class="mt-8"><a href="#openings" class="btn bg-white text-navy px-7 py-3.5 rounded-full font-semibold">See open roles</a></div>
+    </div>
+  </section>
+
+  <!-- ===== PERKS ===== -->
+  <section class="py-16 bg-white">
+    <div class="max-w-7xl mx-auto px-5 sm:px-8 grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+      <div class="reveal text-center p-6"><div class="mx-auto w-14 h-14 rounded-2xl bg-skylight text-brand flex items-center justify-center mb-4"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><path d="M9 22V12h6v10"/></svg></div><h4 class="font-head font-bold text-navy">Remote-friendly</h4><p class="text-sm text-gray-600 mt-1">Distributed team across the US &amp; offshore.</p></div>
+      <div class="reveal text-center p-6"><div class="mx-auto w-14 h-14 rounded-2xl bg-skylight text-brand flex items-center justify-center mb-4"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v20M5 12l7-7 7 7"/></svg></div><h4 class="font-head font-bold text-navy">Growth &amp; learning</h4><p class="text-sm text-gray-600 mt-1">Grow with modern tech and mentorship.</p></div>
+      <div class="reveal text-center p-6"><div class="mx-auto w-14 h-14 rounded-2xl bg-skylight text-brand flex items-center justify-center mb-4"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg></div><h4 class="font-head font-bold text-navy">Real impact</h4><p class="text-sm text-gray-600 mt-1">Your work ships in products people use daily.</p></div>
+      <div class="reveal text-center p-6"><div class="mx-auto w-14 h-14 rounded-2xl bg-skylight text-brand flex items-center justify-center mb-4"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2M9 7a4 4 0 1 0 0 0"/></svg></div><h4 class="font-head font-bold text-navy">Great team</h4><p class="text-sm text-gray-600 mt-1">Collaborate with seasoned experts.</p></div>
+    </div>
+  </section>
+
+  <!-- ===== OPENINGS ===== -->
+  <section id="openings" class="py-20 bg-mesh">
+    <div class="max-w-5xl mx-auto px-5 sm:px-8">
+      <div class="text-center max-w-2xl mx-auto reveal">
+        <span class="text-brand font-semibold">Open positions</span>
+        <h2 class="mt-2 text-4xl font-head font-bold text-navy">We're hiring</h2>
+        <p class="mt-3 text-gray-600">Two open analyst roles. Apply below or email <a href="mailto:careers@diaops.com" class="text-brand font-semibold">careers@diaops.com</a>.</p>
+      </div>
+
+      <div class="mt-12 space-y-6">
+
+        <!-- Sales Analyst -->
+        <div class="reveal bg-white rounded-3xl border border-gray-100 shadow-sm overflow-hidden">
+          <button data-acc class="w-full flex items-center justify-between gap-4 p-7 text-left">
+            <div class="flex items-center gap-4">
+              <div class="w-12 h-12 rounded-xl bg-gradient-to-br from-brand to-sky text-white flex items-center justify-center shrink-0"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 3v18h18M7 14l4-4 3 3 5-6"/></svg></div>
+              <div>
+                <h3 class="text-xl font-head font-bold text-navy">Sales Analyst</h3>
+                <div class="mt-1 flex flex-wrap gap-2 text-xs">
+                  <span class="bg-skylight text-brand px-2.5 py-1 rounded-full font-medium">Full-time</span>
+                  <span class="bg-skylight text-brand px-2.5 py-1 rounded-full font-medium">Remote / Hybrid</span>
+                  <span class="bg-skylight text-brand px-2.5 py-1 rounded-full font-medium">Sales &amp; Strategy</span>
+                </div>
+              </div>
+            </div>
+            <span data-acc-icon class="text-brand text-3xl leading-none transition-transform shrink-0">+</span>
+          </button>
+          <div class="hidden px-7 pb-7 -mt-1">
+            <p class="text-gray-600">As a Sales Analyst at DiaOps, you'll turn sales and market data into insights that drive revenue growth for our cloud and automation products.</p>
+            <div class="grid md:grid-cols-2 gap-6 mt-6">
+              <div>
+                <h4 class="font-head font-bold text-navy mb-2">What you'll do</h4>
+                <ul class="space-y-1.5 text-sm text-gray-600">
+                  <li class="flex gap-2"><span class="text-sky">•</span> Analyze sales performance, pipeline, and forecasting</li>
+                  <li class="flex gap-2"><span class="text-sky">•</span> Build dashboards and reports for leadership</li>
+                  <li class="flex gap-2"><span class="text-sky">•</span> Identify trends, opportunities, and customer insights</li>
+                  <li class="flex gap-2"><span class="text-sky">•</span> Support pricing, targeting, and go-to-market strategy</li>
+                  <li class="flex gap-2"><span class="text-sky">•</span> Partner with sales &amp; marketing teams</li>
+                </ul>
+              </div>
+              <div>
+                <h4 class="font-head font-bold text-navy mb-2">What we're looking for</h4>
+                <ul class="space-y-1.5 text-sm text-gray-600">
+                  <li class="flex gap-2"><span class="text-sky">•</span> 1–3+ years in sales / data analysis</li>
+                  <li class="flex gap-2"><span class="text-sky">•</span> Strong Excel / Google Sheets &amp; SQL a plus</li>
+                  <li class="flex gap-2"><span class="text-sky">•</span> Experience with BI / CRM tools</li>
+                  <li class="flex gap-2"><span class="text-sky">•</span> Analytical, detail-oriented, great communicator</li>
+                  <li class="flex gap-2"><span class="text-sky">•</span> SaaS / B2B experience preferred</li>
+                </ul>
+              </div>
+            </div>
+            <div class="mt-6"><a href="#apply" class="btn inline-block bg-gradient-to-r from-brand to-sky text-white px-6 py-3 rounded-full font-semibold" onclick="document.getElementById('role').value='Sales Analyst'">Apply for this role</a></div>
+          </div>
+        </div>
+
+        <!-- Business Analyst -->
+        <div class="reveal bg-white rounded-3xl border border-gray-100 shadow-sm overflow-hidden">
+          <button data-acc class="w-full flex items-center justify-between gap-4 p-7 text-left">
+            <div class="flex items-center gap-4">
+              <div class="w-12 h-12 rounded-xl bg-gradient-to-br from-navy to-brand text-white flex items-center justify-center shrink-0"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 12h6M9 16h6M9 8h6M5 3h14a1 1 0 0 1 1 1v16a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1z"/></svg></div>
+              <div>
+                <h3 class="text-xl font-head font-bold text-navy">Business Analyst</h3>
+                <div class="mt-1 flex flex-wrap gap-2 text-xs">
+                  <span class="bg-skylight text-brand px-2.5 py-1 rounded-full font-medium">Full-time</span>
+                  <span class="bg-skylight text-brand px-2.5 py-1 rounded-full font-medium">Remote / Hybrid</span>
+                  <span class="bg-skylight text-brand px-2.5 py-1 rounded-full font-medium">Product &amp; Operations</span>
+                </div>
+              </div>
+            </div>
+            <span data-acc-icon class="text-brand text-3xl leading-none transition-transform shrink-0">+</span>
+          </button>
+          <div class="hidden px-7 pb-7 -mt-1">
+            <p class="text-gray-600">As a Business Analyst, you'll bridge business needs and our engineering teams — shaping requirements for Vision, CoreOps, and custom client solutions.</p>
+            <div class="grid md:grid-cols-2 gap-6 mt-6">
+              <div>
+                <h4 class="font-head font-bold text-navy mb-2">What you'll do</h4>
+                <ul class="space-y-1.5 text-sm text-gray-600">
+                  <li class="flex gap-2"><span class="text-sky">•</span> Gather, document &amp; analyze business requirements</li>
+                  <li class="flex gap-2"><span class="text-sky">•</span> Map and improve operational workflows</li>
+                  <li class="flex gap-2"><span class="text-sky">•</span> Translate needs into user stories &amp; specs</li>
+                  <li class="flex gap-2"><span class="text-sky">•</span> Collaborate with product, engineering &amp; clients</li>
+                  <li class="flex gap-2"><span class="text-sky">•</span> Support testing, rollout &amp; reporting</li>
+                </ul>
+              </div>
+              <div>
+                <h4 class="font-head font-bold text-navy mb-2">What we're looking for</h4>
+                <ul class="space-y-1.5 text-sm text-gray-600">
+                  <li class="flex gap-2"><span class="text-sky">•</span> 2–4+ years as a Business / Systems Analyst</li>
+                  <li class="flex gap-2"><span class="text-sky">•</span> Strong requirements &amp; process documentation</li>
+                  <li class="flex gap-2"><span class="text-sky">•</span> Familiarity with Agile / Scrum</li>
+                  <li class="flex gap-2"><span class="text-sky">•</span> Comfortable with data &amp; basic SQL</li>
+                  <li class="flex gap-2"><span class="text-sky">•</span> Excellent communication &amp; stakeholder skills</li>
+                </ul>
+              </div>
+            </div>
+            <div class="mt-6"><a href="#apply" class="btn inline-block bg-gradient-to-r from-brand to-sky text-white px-6 py-3 rounded-full font-semibold" onclick="document.getElementById('role').value='Business Analyst'">Apply for this role</a></div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== APPLICATION FORM ===== -->
+  <section id="apply" class="py-20 bg-white">
+    <div class="max-w-2xl mx-auto px-5 sm:px-8">
+      <div class="text-center reveal">
+        <span class="text-brand font-semibold">Apply now</span>
+        <h2 class="mt-2 text-4xl font-head font-bold text-navy">Submit your application</h2>
+        <p class="mt-3 text-gray-600">Tell us a bit about yourself and we'll be in touch.</p>
+      </div>
+      <form data-form action="https://formsubmit.co/ajax/salesperfumeoutlet@gmail.com" method="POST" class="mt-10 reveal bg-mesh border border-gray-100 rounded-3xl p-8 space-y-5">
+        <input type="hidden" name="_subject" value="New career application — DiaOps" />
+        <input type="hidden" name="_template" value="table" />
+        <input type="hidden" name="_captcha" value="false" />
+        <div class="grid sm:grid-cols-2 gap-5">
+          <div><label class="block text-sm font-medium text-navy mb-1.5">First name</label><input required name="First name" type="text" class="w-full rounded-xl border border-gray-200 px-4 py-3 focus:outline-none focus:ring-2 focus:ring-sky" placeholder="Jane" /></div>
+          <div><label class="block text-sm font-medium text-navy mb-1.5">Last name</label><input required name="Last name" type="text" class="w-full rounded-xl border border-gray-200 px-4 py-3 focus:outline-none focus:ring-2 focus:ring-sky" placeholder="Doe" /></div>
+        </div>
+        <div class="grid sm:grid-cols-2 gap-5">
+          <div><label class="block text-sm font-medium text-navy mb-1.5">Email</label><input required name="email" type="email" class="w-full rounded-xl border border-gray-200 px-4 py-3 focus:outline-none focus:ring-2 focus:ring-sky" placeholder="you@email.com" /></div>
+          <div><label class="block text-sm font-medium text-navy mb-1.5">Phone</label><input name="Phone" type="tel" class="w-full rounded-xl border border-gray-200 px-4 py-3 focus:outline-none focus:ring-2 focus:ring-sky" placeholder="(555) 000-0000" /></div>
+        </div>
+        <div>
+          <label class="block text-sm font-medium text-navy mb-1.5">Role</label>
+          <select id="role" name="Role" required class="w-full rounded-xl border border-gray-200 px-4 py-3 bg-white focus:outline-none focus:ring-2 focus:ring-sky">
+            <option value="">Select a role…</option>
+            <option>Sales Analyst</option>
+            <option>Business Analyst</option>
+          </select>
+        </div>
+        <div>
+          <label class="block text-sm font-medium text-navy mb-1.5">LinkedIn / Portfolio (optional)</label>
+          <input name="LinkedIn / Portfolio" type="url" class="w-full rounded-xl border border-gray-200 px-4 py-3 focus:outline-none focus:ring-2 focus:ring-sky" placeholder="https://linkedin.com/in/…" />
+        </div>
+        <div>
+          <label class="block text-sm font-medium text-navy mb-1.5">Why DiaOps?</label>
+          <textarea name="Why DiaOps" rows="4" class="w-full rounded-xl border border-gray-200 px-4 py-3 focus:outline-none focus:ring-2 focus:ring-sky" placeholder="Tell us about yourself and why you'd be a great fit."></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary w-full bg-gradient-to-r from-brand to-sky text-white py-3.5 rounded-full font-semibold">Submit Application</button>
+        <p data-note class="hidden text-center text-green-600 font-medium bg-green-50 rounded-xl py-3">✓ Thanks! Your application has been received. We'll be in touch soon.</p>
+        <p data-error class="hidden text-center text-red-600 font-medium bg-red-50 rounded-xl py-3">Something went wrong. Please email careers@diaops.com instead.</p>
+        <p class="text-center text-xs text-gray-400">Prefer email? Send your resume to <a href="mailto:careers@diaops.com" class="text-brand">careers@diaops.com</a></p>
+      </form>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="bg-navy text-white/70">
+    <div class="max-w-7xl mx-auto px-5 sm:px-8 py-16 grid md:grid-cols-4 gap-10">
+      <div class="md:col-span-1">
+        <div class="flex items-center gap-2.5"><img src="assets/img/logo-icon.svg" alt="DiaOps" class="h-9 w-9" /><span class="text-2xl font-head font-extrabold text-white">DiaOps</span></div>
+        <p class="mt-4 text-sm">Run Smarter. Scale Faster.</p>
+        <p class="mt-2 text-sm text-white/50">Cloud platforms &amp; automation for modern businesses.</p>
+      </div>
+      <div><h4 class="text-white font-semibold mb-4">Company</h4><ul class="space-y-2.5 text-sm"><li><a href="about.html" class="hover:text-sky">About Us</a></li><li><a href="careers.html" class="hover:text-sky">Careers</a></li><li><a href="contact.html" class="hover:text-sky">Contact</a></li></ul></div>
+      <div><h4 class="text-white font-semibold mb-4">Products</h4><ul class="space-y-2.5 text-sm"><li><a href="products.html" class="hover:text-sky">Vision</a></li><li><a href="products.html" class="hover:text-sky">CoreOps</a></li><li><a href="services.html" class="hover:text-sky">Services</a></li></ul></div>
+      <div><h4 class="text-white font-semibold mb-4">Get in touch</h4><ul class="space-y-2.5 text-sm"><li><a href="mailto:careers@diaops.com" class="hover:text-sky">careers@diaops.com</a></li><li class="text-white/50">United States &amp; Offshore Centers</li></ul></div>
+    </div>
+    <div class="border-t border-white/10"><div class="max-w-7xl mx-auto px-5 sm:px-8 py-6 flex flex-col sm:flex-row items-center justify-between gap-3 text-sm"><p>&copy; <span data-year>2026</span> DiaOps. All rights reserved.</p><p class="font-head font-semibold text-white">Run Smarter. Scale Faster.</p></div></div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
